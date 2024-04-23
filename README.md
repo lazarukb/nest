@@ -56,6 +56,10 @@ The min-height for the background header is 360px. The image is displayed using 
 ### Pelican.conf example
 
 ```python
+# Change the display order to use the modified date, newest first.
+# Because of this, all articles require a date and a modified date tag
+ARTICLE_ORDER_BY = 'reversed-modified'
+
 # NEST Template
 THEME = 'nest'
 SITESUBTITLE = u'My Awesome Blog'
